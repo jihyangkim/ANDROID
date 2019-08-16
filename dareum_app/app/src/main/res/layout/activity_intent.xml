@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dareum.wlgid.dareum_app.Login.IntentActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:src="@drawable/logo_2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_gravity="center"
+                    android:id="@+id/spgender"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:prompt="@string/genderChoiceMsg" />
+                <View
+                    android:background="#FFDADADA"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <Spinner
+                    android:layout_gravity="center"
+                    android:id="@+id/splove"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:prompt="@string/loveChoiceMsg"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="40dp"
+                android:id="@+id/sendButton"
+                android:background="#FF6E4A9D"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFFFF"
+                android:text="@string/sendButtonName"
+                android:onClick="OnInsert"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/l_imei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello World!"
+                />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/l_love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

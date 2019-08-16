@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_gray">#FFE5E5E5</color>
+    <color name="gray">#FFCCCCCC</color>
+    <color name="black">#FF000000</color>
+    <color name="light_blue">#FF78c8e6</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="toomyeong">#00ffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="violet">#6e4a9d</color>
+    <color name="colorViolet">#6E5A9D</color>
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorGray">#ff808080</color>
+    <color name="colorChange">#ffffff</color>
+    <color name="colorMain">#FF6E4A9D</color>
+</resources>

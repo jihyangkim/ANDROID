@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender">
+        <item>여자</item>
+        <item>남자</item>
+    </string-array>
+
+
+    <string-array name="love">
+        <item>모태</item>
+        <item>1 ~ 3 회</item>
+        <item>4 ~ 7 회</item>
+        <item>8회 이상</item>
+        <item>결혼성공</item>
+    </string-array>
+</resources>

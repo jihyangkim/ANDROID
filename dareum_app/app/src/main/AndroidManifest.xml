@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dareum.wlgid.dareum_app">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:icon="@drawable/logo_1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Login.NewbieWelcome"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".SetUp.PwSetup" />
+        <activity
+            android:name=".SwipeActivity"
+            android:label="@string/title_activity_swipe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tutorial.DefaultIntro"
+            android:label="Intro Label"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".Write.MainWrite" />
+        <activity android:name=".Cont.UserProfile" />
+        <activity android:name=".SearchRecently.SearchBefore" />
+        <activity
+            android:name=".core.AppLockActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Comm.Comser" />
+        <activity android:name=".MainNotice" />
+        <activity android:name=".Cont.Mypage" />
+        <activity android:name=".Cont.Mybook" />
+        <activity android:name=".Cont.Mycomm" />
+        <activity android:name=".WriteInsert.WrActivity" />
+        <activity android:name=".WriteInsert.wr_main" />
+        <activity android:name=".WriteInsert.wr_pic" />
+        <activity android:name=".Login.IntentActivity" />
+        <activity android:name=".SetUp.HelpActivity" />
+        <activity android:name=".SetUp.InfoProgram" />
+        <activity
+            android:name=".Tutorial.AgainIntro"
+            android:label="Intro Label"
+            android:theme="@style/FullscreenTheme" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Decision"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dareum.wlgid.dareum_app.WriteInsert.wr_pic">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_user"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <ImageView
+            android:id="@+id/cancle"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:id="@+id/wr_pic"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_2" />
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:src="@drawable/check" />
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:scaleType="centerCrop"
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#FF6E4A9D"/>
+
+    <GridView
+        android:layout_marginTop="2dp"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth" />
+</LinearLayout>

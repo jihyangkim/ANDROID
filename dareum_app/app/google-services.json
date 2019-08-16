@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "926385497105",
+    "firebase_url": "https://dareum-30b5e.firebaseio.com",
+    "project_id": "dareum-30b5e",
+    "storage_bucket": "dareum-30b5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926385497105:android:dae95e72aac16e5f",
+        "android_client_info": {
+          "package_name": "com.dareum.wlgid.dareum_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926385497105-hf8hq4plgi4tn8kgu9u8kb92fia9aet7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC8aen5K5lrxFFz2hN4JDj1vUf_j36p8w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

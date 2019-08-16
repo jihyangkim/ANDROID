@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:orientation="vertical"
+    android:background="#FFF5F6F7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dareum.wlgid.dareum_app.SetUp.PwSetup">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_user"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:theme="@style/Toolbar"
+        android:gravity="center"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <ImageView
+            android:id="@+id/pw_back"
+            android:src="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/logo_2"
+            android:layout_width="70dp"
+            android:layout_height="25dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#FFF5F6F7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="암호"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/bottomtop"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="#FF000000"
+                android:text="암호 잠금"
+                android:layout_weight="8"
+                android:layout_width="0px"
+                android:layout_height="match_parent" />
+            <Switch
+                android:id="@+id/bt_on_off"
+                android:layout_marginRight="10dp"
+                android:layout_weight="5"
+                android:layout_width="0px"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bt_change"
+            android:background="@drawable/bottomtop"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="#FF000000"
+                android:text="암호 변경"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textColor="#FFDB1F26"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:text="암호를 분실했을 경우 앱을 삭제하고 재설치 해야하며, 재설치 시 기존
+대화내용은 삭제됩니다."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
